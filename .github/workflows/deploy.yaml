@@ -9,6 +9,7 @@ jobs:
   deploy-codigofacilito:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - run: python3 -m venv venv
       - run: ruby main.rb
       - run: echo "Hola mundo"
